@@ -1,0 +1,60 @@
+<html>
+        <body><!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form Validation
+            </title>
+        </head>
+        <body>
+            <h1> Form Validation</h1>
+            <form onsubmit="return we()">
+                First Name 
+                <input id="you"type="text"name="fname">
+                <br>
+                <br>
+                Last Name
+                <input id="like" type="text"name="lname">
+                <br>
+                <br>
+                Email
+                <input type="email"name="email"required>
+                <br>
+                <br>
+                User Name
+                <input type="text"name="uname"required>
+                <br>
+                <br>
+                Password
+                <input id="as" type="password"name="password"required>
+                <br>
+                <br>
+                Confirm Password
+                <input id="pop" type="password"name="cpassword"required>
+                <br>
+                <br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+            <script>
+                function we(){
+                var a=document.getElementById("you").value;
+                var b=document.getElementById("like").value;
+                var c=document.getElementById("as").value;
+                var g=document.getElementById("pop").value;
+                if(a==""&&b==""){
+                alert("First Name and Last Name in to be filled");
+                }
+                if(c==g){
+                alert("Login Successful");
+                }
+                else{
+                alert("Login Unsuccessful");
+                }
+                }
+                </script>
+            </body>
+    </html></body>
+        <style></style>
+        <script></script>
+      </html>
